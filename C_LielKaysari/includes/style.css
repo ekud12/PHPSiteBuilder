@@ -1,0 +1,57 @@
+.stage {
+  font-size: 30px;
+  background-color: rgb(255, 242, 217);
+  border-width: 3px;
+  padding: 3px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: rgb(58, 58, 58);
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+.hidden {
+  display: none;
+}
+
+body {
+  background: #f2994a;
+  background: -webkit-linear-gradient(to right, #f2c94c, #f2994a);
+  background: linear-gradient(to right, #f2c94c, #f2994a);
+  align-self: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-color: #3b2613;
+  border-width: 2px;
+  border-style: solid;
+  padding: 10px;
+  outline: 0;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 0.95em;
+}
+
+input[type='button'] {
+  background: rgb(182, 73, 0);
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+input[type='button']:hover {
+  background: rgb(0, 0, 0);
+}
+
+input[type='submit'] {
+  background: rgb(182, 73, 0);
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+input[type='submit']:hover {
+  background: rgb(0, 0, 0);
+}

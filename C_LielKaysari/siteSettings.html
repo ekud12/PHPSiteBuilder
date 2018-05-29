@@ -1,0 +1,171 @@
+<html>
+
+<head>
+    <title>Liel Kaysari</title>
+    <script type="text/javascript" src="includes/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="includes/script.js"></script>
+    <link rel="stylesheet" href="includes/style.css">
+</head>
+
+<body>
+    <center style="font-size: 30;">Build your website, Don't forget... One step at a time.</center>
+    <br/>
+    <br/>
+    <div id="NameBox">
+        <table align="center" border="0px" name="AddName">
+            <tr>
+                <td>Please enter your name (this will appear as your header):</td>
+                <td>
+                    <input type="text" id="Name" />
+                </td>
+                <td>
+                    <input type="button" id="NameButton" value="Submit your name" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+
+    <!-- Step 1 -->
+    <div class="stage" id="step1box">
+        <div id="step1" style="padding:10px;">Step 1</div>
+        <div class="hidden" id="step1form" style="background-color:white; padding:10px;">
+            <table align="center" name="addSiteNames" style="border: none">
+                <tr>
+                    <td style="text-align:center;">
+                        <font size="6" style="font-family:Arial; text-align: center;">Please enter the names of all 5 sites:</font>
+                        <br />
+                        <br />
+                        <div style="font-family:Arial;font-weight: bold;color: black;">
+                            <label for="Site1">Site 1:</label>&nbsp;
+                            <input type="text" id="Site1" />
+                            <br/>
+                            <br/>
+                            <label for="Site2">Site 2:</label>&nbsp;
+                            <input type="text" id="Site2" />
+                            <br/>
+                            <br/>
+                            <label for="Site3">Site 3:</label>&nbsp;
+                            <input type="text" id="Site3" />
+                            <br/>
+                            <br/>
+                            <label for="Site4">Site 4:</label>&nbsp;
+                            <input type="text" id="Site4" />
+                            <br/>
+                            <br/>
+                            <label for="Site4">Site 5:</label>&nbsp;
+                            <input type="text" id="Site5" />
+                            <br/>
+                            <br/>
+                            <center>
+                                <input type="button" id="Step1Submit" value="Submit Site Names" />
+                            </center>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br/>
+    <!-- End of Step 1 -->
+    <!-- Step 2 -->
+    <div class="stage" id="step2box">
+        <div id="step2" style="padding:10px;">Step 2</div>
+        <div class="hidden" id="step2form" style="background-color:white; padding:10px;">
+            <table align="center" name="addSitesDescription" style="border: none">
+                <tr>
+                    <td style="text-align:center;">
+                        <font size="6" style="font-family:Arial; text-align: center;">Please enter the description for each site:</font>
+                        <br />
+                        <br />
+                        <div style="font-family:Arial;font-weight: bold;color: black;">
+                            <label for="Site1TextArea" id="Site1Desc" style="vertical-align:top;">Site 1:</label>
+                            <textarea rows="10" cols="50" id="Site1TextArea"></textarea>
+                            <br/>
+                            <br/>
+                            <label for="Site2TextArea" id="Site2Desc" style="vertical-align:top;">Site 2:</label>
+                            <textarea rows="10" cols="50" id="Site2TextArea"></textarea>
+                            <br/>
+                            <br/>
+                            <label for="Site3TextArea" id="Site3Desc" style="vertical-align:top;">Site 3:</label>
+                            <textarea rows="10" cols="50" id="Site3TextArea"></textarea>
+                            <br/>
+                            <br/>
+                            <label for="Site4TextArea" id="Site4Desc" style="vertical-align:top;">Site 4:</label>
+                            <textarea rows="10" cols="50" id="Site4TextArea"></textarea>
+                            <br/>
+                            <br/>
+                            <label for="Site5TextArea" id="Site5Desc" style="vertical-align:top;">Site 5:</label>
+                            <textarea rows="10" cols="50" id="Site5TextArea"></textarea>
+                            <br/>
+                            <br/>
+                            <center>
+                                <input type="button" id="Step2Submit" value="Submit description of each site" />
+                            </center>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br/>
+    <!-- End of Step 2-->
+    <!-- Step 3 -->
+    <div class="stage" id="step3box">
+        <div id="step3" style="padding:10px;">Step 3</div>
+        <div class="hidden" id="step3form" style="background-color:white; padding:10px;">
+            <table align="center" name="addSitesPhotos" style="border: none">
+                <tr>
+                    <td style="text-align:center;">
+                        <h3 style="font-family:Arial; text-align: center;">Choose photos (
+                            <font color="red">Different names per photo file.</font>)</h3>
+                        <div style='font-family:Arial;font-weight: bold;color: black;'>
+                            <form id="uploadPhotosForm" action="" method="post" enctype="multipart/form-data">
+                                <label for="Site1PhotoUpload" id="Site1UploadPhotoLbl">Site photo:</label>
+                                <input type="file" id="Site1PhotoUpload" name="Site1PhotoUpload" />
+                                <br/>
+                                <br/>
+                                <label for="Site2PhotoUpload" id="Site2UploadPhotoLbl">Site photo:</label>
+                                <input type="file" id="Site2PhotoUpload" name="Site2PhotoUpload" />
+                                <br/>
+                                <br/>
+                                <label for="Site3PhotoUpload" id="Site3UploadPhotoLbl">Site photo:</label>
+                                <input type="file" id="Site3PhotoUpload" name="Site3PhotoUpload" />
+                                <br/>
+                                <br/>
+                                <label for="Site4PhotoUpload" id="Site4UploadPhotoLbl">Site photo:</label>
+                                <input type="file" id="Site4PhotoUpload" name="Site4PhotoUpload" />
+                                <br/>
+                                <br/>
+                                <label for="Site5PhotoUpload" id="Site5UploadPhotoLbl">Site photo:</label>
+                                <input type="file" id="Site5PhotoUpload" name="Site5PhotoUpload" />
+                                <br/>
+                                <br/>
+                                <center>
+                                    <input type="submit" id="Step3Submit" value="Submit photos for each site page" />
+                                </center>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="hidden" id="SubmitDiv">
+        <center>
+            <input type="button" id="Submit" value="Work your Magic!" />
+        </center>
+    </div>
+    <div class="hidden" id="GotoDiv">
+        <center>
+            <a href="../D_LielKaysari/Sites/index.html">Go To your website</a>
+        </center>
+    </div>
+    <!-- End of Step 3-->
+</body>
+
+</html>
